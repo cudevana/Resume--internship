@@ -1,0 +1,333 @@
+body{
+    margin:0px;
+    width:100%;   
+}
+
+nav ul li{
+    list-style-type:none;
+    float:left;
+    padding-left:15px;
+    color:#f8b595;
+    padding-right: 50px;
+}
+nav ul{
+    float:right;
+}
+nav{
+    width:100%;
+    height:50px;
+    background-color: #900c3f;
+    position: fixed;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:beige;
+}
+
+section{
+  background-color: #ccafaf; 
+}
+
+.home{
+  background-color: #f8b595;
+  text-align: center;
+  font-family: 'Fondamento', cursive;
+  font-size: 42px;
+  color: #092532;
+  padding-top: 50px;
+  display: table;
+  height: 100vh;
+  width:100%;
+}
+
+.home img{
+  padding: 20px;
+  border-radius: 100%;
+  width: 250px; /*to resize the image*/
+  height: auto;
+  text-align: center;
+  /*padding: 400px;  /*for brining home image down*/
+}
+
+
+.about{
+background-image: url("https://lh3.googleusercontent.com/proxy/WbWN2ozKoE4NJAKa9YpsbEjBFvEwyLapV7Ttv2c9lqaq4CJW_RBIYc6VVmRv5EWsPd4Z52rf2z7ideiKxBvyrnYEGyse4YP-a-G3Fot3fzkAyPSweK1vnXW_E5URV5hM4SmJjwFURpwUzNGzRszW");
+height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+display: table;
+
+}
+
+.about .inner{
+  display:table-cell;
+  width:50%;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.about .inner h1{
+  font-size: 48px;
+  font-weight: 400px;
+ 
+}
+
+.about .inner p{
+  font-size: 23px;
+  word-spacing: 5px;
+  line-height: 30px;
+  font-weight: 300;
+  color:white;
+    
+}
+
+.education{
+  background-color: #ffcac2;
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+
+.education .inner{
+  padding:50px;
+}
+.education h1{
+  font-size: 42px;
+  padding-top: 40px;
+}
+
+.education .inner div , .hobbies .inner div{
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+}
+
+.education .inner div img{
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.education .inner div p, .skills .inner div ul li{
+  font-size: 26px;
+}
+
+.skills .inner div {
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+}
+
+.skills {
+  display: table;
+   height: 100vh;
+  width: 100%;
+  background-image:url("https://www.chieflearningofficer.com/wp-content/uploads/sites/3/beans/images/CO_0808_Microlearning-8b38574.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table;
+}
+.skills h1, .hobbies .inner h1 {
+  font-size: 42px;
+  padding-top: 40px;
+}
+
+.hobbies, .skills, .contact{
+  height: 100vh;
+  width: 100%;
+}
+
+.hobbies{
+  background-color:#f6def6;
+}
+.hobbies .inner p{
+    font-size:28px;
+}
+
+ .hobbies .inner{
+  padding: 50px;
+}
+.skills .inner{
+    
+     padding: 50px;
+}
+
+.skills .inner div ul li{
+  list-style-type: none;
+  font-weight: 800;
+}
+
+.skills .inner div ul li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hobbies .inner img{
+ /* padding-top:70px;*/
+  width: 200px; /*to size the school and college image*/
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.contact{
+  background-image: url('https://i.pinimg.com/originals/0d/af/b7/0dafb7928a99a9cb552a941895a6e586.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align:center;
+    display:table;
+}
+.contact .inner h1{
+  font-size: 42px;
+  padding-top:200px;
+}
+.contact .inner h2, .contact .inner h1{
+  text-align: center;
+}
+
+
+/*responsive designing*/
+
+/*@media (min-width:2561px){
+  section{
+    font-size:30px;  }
+    .about .inner p{
+      font-size:40px;
+      word-spacing: 5px;
+  line-height: 50px;
+    }
+    nav ul li{
+  font-size:30px;
+}
+.home{
+  padding-top:475px;
+}
+.skills h1, .hobbies .inner h1, .education h1, .about .inner h1{
+  font-size:82px;
+}
+.skills .inner div ul li{
+  font-size:42px;
+}
+}*/
+
+@media (min-width:769px) and (max-width:1024px){
+  .about .inner p{
+    font-size:18px;
+  }
+  .home {
+    font-size:20px;
+  }
+   .home img{
+    width:150px;
+    height:auto;
+  }
+}
+
+@media (min-width:426px) and (max-width:768px){
+  .about .inner p{
+    font-size:14px;
+    line-height:20px;
+  }
+  .about .inner h1, .education .inner h1, .skills .inner h1, .hobbies .inner h1, .contact .inner h1{
+    font-size: 30px;
+  }
+
+.skills .inner div ul li{
+  font-size: 20px;
+}
+  .education .inner h2, .education .inner div p{
+    font-size:18px;
+  }
+  .home {
+    font-size:20px;
+  }
+  .home img, .hobbies .inner img{
+    width:150px;
+    height:auto;
+  }
+}
+
+@media (min-width:376px) and (max-width:426px){
+  nav ul li{
+    font-size:12px;
+    padding:10px;
+  }
+  .home {
+    font-size:12px;
+  }
+
+  .home img{
+    width:100px;
+    height:auto;
+  }
+  .about .inner p{
+    font-size:13px;
+    line-height:15px;
+  }
+.about .inner h1, .education .inner h1, .skills .inner h1, .hobbies .inner h1, .contact .inner h1{
+    font-size: 20px;
+  }
+  .education .inner h2, .education .inner div p{
+    font-size:15px;
+  }
+
+  .education .inner div img{
+    width: 70px;
+    height:auto;
+  }
+  .skills .inner div ul li{
+  font-size: 13px;
+}
+.contact .inner h1, .contact .inner h2{
+    font-size: 20px;
+  }
+   .home img, .hobbies .inner img{
+    width:90px;
+    height:auto;
+  }
+}
+
+@media (max-width:376px){
+.home img{
+    width:70px;
+    height:auto;
+  }
+  .home {
+    font-size:10px;
+  }
+   nav ul li{
+    font-size:12px;
+    padding:5px;
+  }
+  .about{
+    height:100vh;
+    width:100%;
+  }
+   .about .inner p{
+
+    font-size:13px;
+    line-height:15px;
+    text-align:justify;
+  }
+.about .inner h1, .education .inner h1, .skills .inner h1, .hobbies .inner h1, .contact .inner h1, .contact .inner h2{
+    font-size: 20px;
+  }
+
+  .hobbies .inner img, .education .inner div img, .skills .inner div ul li{
+    width:100%;
+  }
+   .skills .inner div ul li,.education .inner h2, .education .inner div p{
+  font-size: 13px;
+}
+}
